@@ -27,8 +27,8 @@ export class PaymentsService {
         brand_name: 'fastburguers.com',
         user_action: 'PAY_NOW',
         landing_page: 'NO_PREFERENCE',
-        return_url: 'http://localhost:3001/capture-order',//`${process.env.DB_HOST}/capture-order`||'http://localhost:3001/capture-order',
-        cancel_url: 'http://localhost:3000/checkout'//`${process.env.DB_HOST}/checkout`||'http://localhost:3000/checkout',
+        return_url: `${process.env.URL_BACK}/capture-order`||'http://localhost:3001/capture-order',
+        cancel_url: `${process.env.URL_FRONT}/checkout`||'http://localhost:3000/checkout',
       },
     });
 
